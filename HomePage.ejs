@@ -1,0 +1,58 @@
+<html lang='en'>
+<head>
+<title>Book Store Inventory</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1  class="c1">Author Attic</h1></center>
+    <h6><a href="/create" class="c2">Add New Product</a></h6>
+    <h6><a href="/updatestock" class="c2">Update Stock</a></h6> 
+    <h6><a href="/deleteproduct" class="c2">Delete Product</a></h6>
+
+ <center><h2>Welcome</h2></center>
+
+ <center> <table>
+
+    <tr>
+    
+    <th>Product ID</th>
+    
+    <th>Book Name</th>
+    
+    <th>Author</th>
+    
+    <th>Genre</th>
+    
+    <th>Price</th>
+    
+    <th>Stock</th>
+    </tr>
+    
+    <% for (var i=0; i<data.length; i++) {%>
+    <tr>
+    
+    <td><%= data[i].PId %></td>
+    
+    <td><%= data[i].BookName %></td>
+
+    <td><%= data[i].Author %></td>
+    
+    <td><%= data[i].Genre %></td>
+
+    <td><%= data[i].Price %></td>
+    
+    <td><%= data[i].Stock %></td>
+
+    </tr>
+    <% } %>
+    
+    
+    </table> </center>
+    
+
+
+</body>
+</html>
+ 
